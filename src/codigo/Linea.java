@@ -22,10 +22,12 @@ public class Linea {
         this.color = _color;
     }
     
-    public  void pintaLinea(Graphics g, int posX, int posY){
+    public  void pintarLinea(Graphics g, int posX, int posY){
         
         this.x2= posX;
         this.y2 =posY;
+        
+        g.setColor(color);
         
         g.drawLine(x1, y1, x2, y2);
     }
